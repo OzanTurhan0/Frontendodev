@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <-- action="3.ders/index.html"" -->
+    <form>
+      <label for="ad">Adınızı girin</label>
+      <input
+        type="text"
+        placeholder="ad girin"
+        name="ad1"
+        id="ad"
+      /><br /><br />
+      <input type="password" name="parola" id="parola" /><br /><br />
+
+      <input type="email" name="email" id="email" /><br /><br />
+      <input type="date" name="tarih" id="tarih" /><br /><br />
+      <input type="search" name="ara" id="ara" /><br /><br />
+      <input type="tel" name="telephone" id="telephone" /><br /><br />
+      <input type="time" name="saat" id="saat" /><br /><br />
+      <!-- dosya yükleme için -->
+      <input type="file" name="foto" id="foto" /><br /><br />
+      <!-- puanlama cubuğu -->
+      <input type="range" name="puan" id="puan" min="0" max="10" /><br /><br />
+      <input type="color" name="renk" id="renk" />
+      <input type="radio" name="cinsiyet" value="kadin" />kadın
+      <input type="radio" name="cinsiyet" value="erkek" checked />erkek
+      <br /><br />
+      <select name="sehir" id="sehir">
+        <option value="">Şehir Seçiniz</option>
+        <option value="İstanbul">İstanbul</option>
+        <option value="Ankara">Ankara</option>
+      </select>
+      <textarea name="yazi" id="yazi" cols="30" rows="10"></textarea>
+      <input type="reset" name="sıfırla" id="sıfırla" />
+
+      <input type="submit" value="gönder" /><br /><br />
+      <button>Gönder</button>
+      <fieldset>
+        <legend>Kullanıcı Formu</legend>
+        <label for="adınız">adınız</label>
+        <input type="text" id="adınız" />
+      </fieldset>
+    </form>
+  </body>
+</html>

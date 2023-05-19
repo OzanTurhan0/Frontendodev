@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Öğrenci Kayıt Formu</h1>
+    <form>
+      <label for="ad">Adınız</label>
+      <input type="text" name="ad" id="ad" /><br /><br />
+      <label for="soyad">Soyadınız</label>
+      <input type="text" name="soyad" id="soyad" /><br /><br />
+      <label for="cinsiyet">Cinsiyet:</label>
+      <input type="radio" name="cinsiyet" id="cinsiyet" checked />Erkek
+      <input type="radio" name="cinsiyet" id="cinsiyet1" />Kadın <br /><br />
+      <label for="dtarih">Doğum Tarihi:</label>
+      <input type="date" name="dtarih" id="dtarih" /><br /><br />
+      <label for="eposta">E-posta Adresiniz:</label>
+      <input type="email" name="eposta" id="eposta" /><br /><br />
+      <label for="bölüm">Bölüm:</label>
+      <select name="bölüm" id="bölüm">
+        <option value="Seçiniz">Seçiniz</option>
+        <option value="Seçmeyiniz">Seçmeyiniz</option>
+        <option value="Ankara">Ankara</option></select
+      ><br /><br />
+      <label for="ilgi">İlgi Alanları:</label>
+      <input type="checkbox" id="ilgi" name="ilgi" value="Spor" />
+      <label for="vehicle1">Spor</label>
+      <input type="checkbox" id="ilgi1" name="ilgi1" value="Müzik" />
+      <label for="vehicle2"> Müzik</label>
+      <input type="checkbox" id="ilgi2" name="ilgi2" value="Sinema" />
+      <label for="vehicle3"> Sinema</label><br /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
