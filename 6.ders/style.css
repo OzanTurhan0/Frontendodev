@@ -1,0 +1,11 @@
+h1 {
+  font-weight: 100;
+  font-family: sans-serif;
+  color: red;
+}
+#hhh {
+  color: blue;
+}
+a[target="_blank"] {
+  color: rebeccapurple;
+}
