@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .static {
+        position: static;
+        border: 3px solid #73ad21;
+        margin-bottom: 25px;
+      }
+      .relative1 {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73ad21;
+        margin-bottom: 25px
+      }
+      .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73ad21;
+        margin-bottom: 25px
+      }
+      .relative2 {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+        margin-bottom: 25px
+      }
+
+      .absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+        margin-bottom: 25px
+      }
+      .sticky {
+        padding: 10px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: green;
+        border: 2px solid #4CAF50;
+        color: white;}
+    </style>
+  </head>
+  
+    <mark>position:static elementler normal şekilde sayfanın akışında konumlanırlar.
+    top bottom left right tan etkilenmezler</mark>
+    <div class="static">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus officia
+      fuga fugiat, ducimus laborum voluptatum.
+    </div>
+
+    <mark>position:relative ile element normal pozisyonuna göre konumlandırılabilir.</mark>
+    <div class="relative1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis
+      architecto quas quidem omnis autem!
+    </div>
+    
+    <div class="fixed">
+        <mark>position:fixed ile viewporta göre konumlandırırız yani sayfa scroll down
+            yapılırsa bile aynı konumda ekranda durur.</mark>
+    </div>
+    <mark>
+      position: absolute; ile en yakın konumlandırılmış ancestor elemente göre
+      konumlanır .fixed in viewportunu bir üst divle değiştirmek gibi.bu örnekte
+      relative2 class ı olan dive göre konumlandırılır.</mark
+    >
+    <div class="relative2">
+      This div element has position: relative;
+      <div class="absolute">This div element has position: absolute;</div>
+
+    </div>
+    <div class="sticky">sayfa aşağı kaydırılana ya da küçültülene kadar bir poziyonda kalır sonrasında viewportta bir konuma yapışır ve fixed gibi olur.sayfa ilk konumna geldiğinde kendi poziyonuna geri döner.</div>
+    <div style="padding-bottom:2000px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at, porro doloremque ratione quas sequi beatae animi ipsam, assumenda consequuntur esse cumque iure sed consequatur laboriosam qui eaque perspiciatis. Iste expedita deleniti corporis voluptatum. Dolores delectus dolorem consequatur placeat tempora tempore itaque deserunt minus quia accusamus dolore maxime illum asperiores dolor fugiat deleniti, quam amet neque. Dolores, tempora at tempore quod neque dignissimos optio! Unde ex, iure aut veniam enim sint. Libero aut nobis dicta eius voluptate nostrum non dignissimos modi asperiores! Hic asperiores rerum amet, debitis inventore cumque, ab molestias repellendus nostrum ipsa quo? Exercitationem similique error corrupti ut!</p>
+      </div>
+  </body>
+</html>
