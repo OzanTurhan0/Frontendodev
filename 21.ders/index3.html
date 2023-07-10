@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="ac">ac</button>
+    <button id="kapat">kapat</button>
+    <img id="resim" src="img/off.gif" alt="aa" />
+    <p id="p1">Lorem ipsum dolor sit amet.</p>
+    <button id="gizle">gizle</button>
+    <button id="göster">göster</button>
+    <script>
+      document.getElementById("ac").onclick = function () {
+        document.getElementById("resim").src = "img/on.gif";
+      };
+      document.getElementById("kapat").onclick = function () {
+        document.getElementById("resim").src = "img/off.gif";
+      };
+      document.getElementById("gizle").onclick = function () {
+        document.getElementById("p1").style.display = none;
+      };
+      document.getElementById("göster").onclick = function () {
+        document.getElementById("p1").style.display = block;
+      };
+    </script>
+  </body>
+</html>

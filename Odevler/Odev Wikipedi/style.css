@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #eaecf0;
+  padding: 20px 0;
+}
+.col-75 .text p {
+  margin: 0;
+}
+nav .navigation,
+nav form {
+  float: left;
+}
+.navigation i,
+.navigation img {
+  padding: 10px 10px 0 0;
+}
+nav form {
+  padding: 0 0 0 50px;
+}
+nav form input {
+  padding: 10px 80px 10px 2px;
+  border: none;
+  font-size: 14px;
+}
+nav form i {
+  float: left;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Temel Ayarlar */
+.container {
+  width: 75%;
+  margin: auto;
+}
+.col-25 {
+  width: 25%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-75 {
+  width: 75%;
+}
+.col-100 {
+  width: 100%;
+}
+.col-25,
+.col-50,
+.col-75,
+.col-100 {
+  float: left;
+}
+/* içerik */
+/* içindekiler dropdown css */
+.dropbtn {
+  background-color: #f8f9fa;
+  color: rgb(0, 0, 0);
+  padding: 16px 200px 16px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #e9eaea;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 296px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.dropdown-content ul dl a {
+  color: rgb(61, 61, 255);
+  padding: 5px 16px;
+  text-decoration: none;
+}
+.dropdown-content ul dl a:hover {
+  text-decoration: underline;
+}
+
+.show {
+  display: block;
+}
+/* içindekiler end */
+/* acordion */
+.accordion {
+  background-color: #ffffff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border-width: 1px;
+  border: none;
+  border-bottom: solid;
+
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+/* içerik end*/
+
+/* tablo */
+table {
+  width: 100%;
+  border: 1px solid rgb(157, 157, 157);
+
+  background-color: #eaecf0;
+  margin-bottom: 30px;
+}
+table tr .img {
+  text-align: center;
+}
+table tr {
+  font-size: 14px;
+}
+table th h4 {
+  text-align: start;
+}
+table .baslik {
+  font-size: 18px;
+}
+table tr td .sp1 {
+  color: blue;
+}
+table tr td .sp2 {
+  color: red;
+}
+
+/* end tablo */
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #eaecf0;
+  overflow: hidden;
+  padding: 20px;
+}
+footer > .footer-element {
+  width: 75%;
+  margin: auto;
+}
+footer > .footer-element > .logo {
+  width: 150px;
+}
+footer > .footer-element > .logo > img {
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 990px) {
+  .col-25,
+  .col-75 {
+    width: 100%;
+  }
+  .order-1 {
+    order: 2;
+  }
+  .order-2 {
+    order: 1;
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">Bu bir paragraftır.</p>
+    <button id="btn">Değiştir</button>
+    <p id="p2">Bu ikinci paragraf</p>
+    <script>
+      document.getElementById("btn").onclick = function () {
+        document.getElementById("p1").innerHTML =
+          document.getElementById("p2").innerHTML;
+        document.getElementById("p2").innerHTML =
+          document.getElementById("p1").innerHTML;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(82, 82, 82);
+  font-size: 20px;
+}
+nav {
+  overflow: hidden;
+}
+nav .logo {
+  float: left;
+  width: 30%;
+  margin-top: -10px;
+}
+nav .logo img {
+  width: 120px;
+  padding: 0px 14px;
+}
+nav .link {
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  margin-top: 30px;
+}
+nav .link a {
+  display: inline;
+  color: gray;
+
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px 20px;
+}
+nav .link a:hover {
+  background-color: rgb(253, 123, 8);
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+.row {
+  width: 100%;
+  margin-top: 140px;
+}
+.col-25 {
+  width: 25%;
+  float: left;
+}
+.col-50 {
+  width: 50%;
+  float: left;
+}
+.col-75 {
+  width: 75%;
+  float: left;
+}
+.col-100 {
+  width: 100%;
+  float: left;
+}
+.text-content {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+div {
+  overflow: auto;
+}
+.banner {
+  margin-top: 10px;
+}
+.banner h2 {
+  margin-top: 100px;
+}
+.banner h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.icons {
+  margin-top: 20px;
+}
+.icon {
+  color: rgb(253, 123, 8);
+}
+.icon:hover {
+  background-color: rgb(253, 123, 8);
+  color: white;
+}
+.text-content1 {
+  padding: 0 50px;
+}
+.text-content1 h2 {
+  margin-bottom: 10px;
+}
+.btn-content1 {
+  margin-top: 30px;
+}
+.content-2 {
+  text-align: center;
+}
+.content-2 .servis {
+  border: 2px solid rgba(128, 128, 128, 0.4);
+  margin: 20px 5px;
+  padding: 50px 10px;
+  box-shadow: 0 6px 5px 0 rgba(176, 176, 176, 0.5);
+  color: rgb(253, 123, 8);
+}
+.content-2 .servis i {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+.content-2 .servis:hover {
+  background-color: rgb(253, 123, 8);
+  color: white;
+}
+.con2 {
+  padding: 10px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 5%;
+  padding: 0 4px;
+}
+form {
+  margin-top: 100px;
+  padding: 10px;
+}
+input {
+  width: 48%;
+  float: left;
+  margin: 1%;
+}
+textarea {
+  width: 100%;
+}
+input,
+textarea {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+iframe {
+  margin-top: 100px;
+}
+/* button ayarları */
+button {
+  color: white;
+  background-color: rgb(253, 123, 8);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+
+  font-size: 17px;
+}
+button:hover {
+  background-color: rgb(195, 123, 8);
+}
+.btn {
+  background-color: rgb(82, 82, 82);
+}
+@media screen and (max-width: 1138px) {
+  nav .logo,
+  nav .link {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  nav .link a {
+    display: block;
+    padding: 5px 14px 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .col-25,
+  .col-75 {
+    width: 50%;
+  }
+  .text-content1 {
+    overflow: auto;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-25,
+  .col-50,
+  .col75 {
+    width: 100%;
+  }
+  .text-content1 {
+    width: 100%;
+    height: auto;
+  }
+  .banner {
+    text-align: center;
+  }
+  .column {
+    flex: 100%;
+  }
+}
