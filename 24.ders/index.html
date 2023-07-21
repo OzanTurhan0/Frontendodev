@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let meyveler = ["Erik", "Kiraz", "Elma"];
+      let sonuc1 = meyveler.push("Şeftali"); //sonuna ekler
+      let sonuc2 = meyveler.pop(); //son elemanı siler
+      let sonuc3 = meyveler.shift(); //ilk elemanı siler
+      let sonuc4 = meyveler.unshift("Şeftali"); //ilk eleman ekler
+      let sonuc5 = meyveler.slice(1, 3); //1. indexten 3. indexe kadar siler
+      let sonuc6 = meyveler.slice(1); //1. indexe kadar siler
+      let sonuc7 = meyveler.splice(1); //1. indexe kadar siler
+      console.log(sonuc1, sonuc2, sonuc3, sonuc4, sonuc5, sonuc6);
+      let a = meyveler.sort();
+      console.log(a);
+
+      let liste = ["elma", "ekmek", "süt"];
+    </script>
+  </body>
+</html>

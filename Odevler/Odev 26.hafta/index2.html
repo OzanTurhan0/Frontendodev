@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="yas1">Yaş1</label>
+    <input type="number" id="yas1" />
+    <label for="yas2">Yaş2</label>
+    <input type="number" id="yas2" />
+    <button id="btn">Hesap</button>
+    <script>
+      document.getElementById("btn").onclick = function () {
+        yas1 = document.getElementById("yas1").value;
+        yas2 = document.getElementById("yas2").value;
+        fark = yas1 - yas2;
+
+        if (yas1 > yas2) {
+          document.write("yaşın" + yas1 + "aranızdaki yaş farkı:");
+        } else if (yas2 > yas1) {
+          document.write("yaşın" + yas1 + "aranızdaki yaş farkı:");
+        } else {
+          document.write("eşit");
+        }
+      };
+    </script>
+  </body>
+</html>
