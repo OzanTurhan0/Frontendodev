@@ -1,14 +1,23 @@
 /* Global Styles */
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body,
 html {
   height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  min-height: 500px;
+  padding: 20px;
 }
 
 /* Navigation */
@@ -62,6 +71,102 @@ ul li a {
 ul li a:hover {
   background-color: rgb(204, 170, 248);
   color: white;
+}
+/* Container */
+.animation {
+  width: 90%;
+  margin: 30px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  border: 8px solid rgb(70, 5, 192);
+  border-radius: 10px;
+}
+/* reset */
+
+/* other */
+.info {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.animation p {
+  color: #2e2e2e;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* block-$ */
+.block-image {
+  width: 25%;
+  display: flex;
+}
+.block-image img {
+  width: 100%;
+  background-color: rgb(70, 5, 192);
+  padding-left: 2.5vw;
+}
+.block-text {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.block-effect {
+  width: 100%;
+  font-size: calc(8px + 3vw);
+}
+
+.block-reveal {
+  color: transparent;
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  animation-delay: 0.5s;
+  animation: revealBlock 0s 1.3s forwards;
+}
+
+.block-reveal::after {
+  content: "";
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: rgb(70, 5, 192);
+  animation-delay: 0.5s;
+  animation: revealingIn 1.2s 0.5s forwards, revealingOut 1.2s 1.3s forwards;
+}
+
+/* animations */
+@keyframes revealBlock {
+  100% {
+    color: rgb(70, 5, 192);
+  }
+}
+
+@keyframes revealingIn {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 101%;
+  }
+}
+
+@keyframes revealingOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(102%);
+  }
 }
 
 /* Hero Image */
@@ -128,12 +233,11 @@ ul li a:hover {
   display: flex;
   width: 90%;
   margin: auto;
-  height: 70vh;
+  padding: 50px 0 200px 0;
   background-color: rgb(70, 5, 192);
   text-align: center;
   align-items: center;
-  color: aliceblue;
-  padding-bottom: 50px;
+  color: rgb(255, 255, 255);
 }
 
 .about-me h3 {
@@ -195,6 +299,7 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   width: 90%;
+  padding: 4vw;
   margin: auto;
   height: auto;
   color: white;
@@ -211,6 +316,7 @@ ul li a:hover {
 
 .logoend img {
   width: 100%;
+  padding-left: 1vw;
 }
 
 .logos {
@@ -224,11 +330,6 @@ ul li a:hover {
   margin: 10px;
   color: white;
   font-size: 30px;
-  height: auto;
-}
-
-.logo6 i {
-  width: 100%;
 }
 
 /* Media Queries */
@@ -238,7 +339,25 @@ ul li a:hover {
     flex-direction: column;
     align-items: center;
   }
-
+  .navlinks {
+    width: 90%;
+  }
+  ul,
+  ul li,
+  ul li a {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+  ul li {
+    margin: 5px auto;
+  }
+  ul li a {
+    margin: auto;
+    padding: 5px 30px;
+    border-radius: 5px;
+  }
   .logoimg {
     width: 100px;
     height: 100px;
@@ -254,11 +373,8 @@ ul li a:hover {
     width: 100%;
     justify-content: space-around;
   }
-
-  ul li a {
-    margin: auto;
-    padding: 5px 30px;
-    border-radius: 5px;
+  .block-image img {
+    padding: 1.2vw 0 1.2vw 2.4vw;
   }
 
   /* Hero image styles */
@@ -295,10 +411,13 @@ ul li a:hover {
   /* About me section styles */
   .about-me {
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
   }
 
   .about-me h3 {
-    margin-top: 30px;
     font-size: 4vw;
   }
 
@@ -320,6 +439,9 @@ ul li a:hover {
   /* Footer styles */
   .footer {
     height: auto;
+  }
+  .logoend img {
+    padding-left: 2.6vw;
   }
 
   .logo6 {
