@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sayi1 = parseInt(prompt("ilk sayıyı giriniz"));
+      let sayi2 = parseInt(prompt("ikinci sayıyı giriniz"));
+      let n = parseInt(prompt("1 den kaça kadar toplansın"));
+      const currentDate = new Date();
+
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth() + 1;
+      const day = currentDate.getDate();
+      const hours = currentDate.getHours();
+      const minutes = currentDate.getMinutes();
+      const seconds = currentDate.getSeconds();
+
+      const targetNumber = Math.floor(Math.random() * 101);
+
+      // Tahmin işlemini fonksiyon içinde gerçekleştiriyoruz
+
+      function kare(a) {
+        return Math.pow(a, 2);
+      }
+      function topla(a, b) {
+        return a + b;
+      }
+      function ntopla(c) {
+        return ((1 + c) * c) / 2;
+      }
+
+      document.write("sayi1 in karesi = " + kare(sayi1) + "<br>");
+      document.write("iki sayi toplamı = " + topla(sayi1, sayi2) + "<br>");
+      document.write(
+        "1 den " + n + "'e kadar sayıların toplamı = " + ntopla(n) + "<br>"
+      );
+
+      for (let i = 8; i <= 10; i++) {
+        document.write("Çarpım Tablosu" + i + "<br>");
+        for (let j = 1; j <= 10; j++) {
+          document.write(i + " çarpı " + j + " = " + i * j + "<br>");
+        }
+        document.write("*************************" + "<br>");
+      }
+
+      document.write("Yıl: " + year + "<br>");
+      document.write("Ay: " + month + "<br>");
+      document.write("Gün: " + day + "<br>");
+      document.write("Saat: " + hours + "<br>");
+      document.write("Dakika: " + minutes + "<br>");
+      document.write("Saniye: " + seconds + "<br>");
+      function guessNumber(userGuess) {
+        if (userGuess < targetNumber) {
+          return "Daha Büyük sayı girin.";
+        } else if (userGuess > targetNumber) {
+          return "Daha Küçük sayı girin.";
+        } else {
+          return "Tebrikler, sayıyı bildiniz!";
+        }
+      }
+
+      // Kullanıcıdan tahminini alıyoruz
+      const userGuessString = prompt(
+        "0 ile 100 arasında bir sayı tahmin edin:"
+      );
+
+      const userGuess = Number(userGuessString);
+      const resultMessage = guessNumber(userGuess);
+      document.write(resultMessage);
+    </script>
+  </body>
+</html>
